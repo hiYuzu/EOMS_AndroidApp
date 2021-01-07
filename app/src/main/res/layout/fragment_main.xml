@@ -1,0 +1,218 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:paddingLeft="@dimen/fragment_main_padding"
+    android:paddingRight="@dimen/fragment_main_padding"
+    android:paddingTop="@dimen/fragment_main_padding">
+
+    <android.support.v4.widget.SwipeRefreshLayout
+        android:id="@+id/refresh_main_fragment"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+            <!--title text-->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+            <TextView
+                android:id="@+id/tv_task_distinction"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:text="@string/main_fragment_title"
+                android:textSize="@dimen/fragment_main_title_size" />
+
+
+                <TextView
+                    android:id="@+id/tv_name_title_distinction"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/main_fragment_title"
+                    android:textSize="16sp" />
+
+                <TextView
+                    android:id="@+id/tv_user_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="16dp"
+                    android:text="@string/main_fragment_title"
+                    android:textSize="16sp" />
+            </LinearLayout>
+
+
+            <!--first row-->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/fragment_main_margin"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:id="@+id/layout_device_fault"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="?attr/selectableItemBackground"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:id="@+id/img_device_fault"
+                        android:layout_width="@dimen/fragment_main_icon_size"
+                        android:layout_height="@dimen/fragment_main_icon_size"
+                        android:layout_centerInParent="true"
+                        android:layout_gravity="center_horizontal"
+                        app:srcCompat="@mipmap/device_fault" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal"
+                        android:text="@string/main_fragment_content1"
+                        android:textSize="@dimen/fragment_main_font_size" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/layout_device_search"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="?attr/selectableItemBackground"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:id="@+id/img_device_search"
+                        android:layout_width="@dimen/fragment_main_icon_size"
+                        android:layout_height="@dimen/fragment_main_icon_size"
+                        android:layout_gravity="center_horizontal"
+                        app:srcCompat="@mipmap/device_search" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal"
+                        android:text="@string/main_fragment_content2"
+                        android:textSize="@dimen/fragment_main_font_size" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/layout_device_correct"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="?attr/selectableItemBackground"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:id="@+id/img_device_correct"
+                        android:layout_width="@dimen/fragment_main_icon_size"
+                        android:layout_height="@dimen/fragment_main_icon_size"
+                        android:layout_gravity="center_horizontal"
+                        app:srcCompat="@mipmap/device_correct" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal"
+                        android:text="@string/main_fragment_content3"
+                        android:textSize="@dimen/fragment_main_font_size" />
+                </LinearLayout>
+
+            </LinearLayout>
+            <!--second row-->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/fragment_main_margin"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:id="@+id/layout_device_checkout"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="?attr/selectableItemBackground"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:id="@+id/img_device_checkout"
+                        android:layout_width="@dimen/fragment_main_icon_size"
+                        android:layout_height="@dimen/fragment_main_icon_size"
+                        android:layout_gravity="center_horizontal"
+                        app:srcCompat="@mipmap/device_checkout" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal"
+                        android:text="@string/main_fragment_content4"
+                        android:textSize="@dimen/fragment_main_font_size" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/layout_device_control"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="?attr/selectableItemBackground"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:id="@+id/img_device_control"
+                        android:layout_width="@dimen/fragment_main_icon_size"
+                        android:layout_height="@dimen/fragment_main_icon_size"
+                        android:layout_gravity="center_horizontal"
+                        app:srcCompat="@mipmap/device_control" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal"
+                        android:text="@string/main_fragment_content5"
+                        android:textSize="@dimen/fragment_main_font_size" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/layout_device_drift"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="?attr/selectableItemBackground"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:id="@+id/img_device_drift"
+                        android:layout_width="@dimen/fragment_main_icon_size"
+                        android:layout_height="@dimen/fragment_main_icon_size"
+                        android:layout_gravity="center_horizontal"
+                        app:srcCompat="@mipmap/device_drift" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal"
+                        android:text="@string/main_fragment_content6"
+                        android:textSize="@dimen/fragment_main_font_size" />
+                </LinearLayout>
+
+                <!--last one nothing-->
+                <!--<LinearLayout-->
+                    <!--android:layout_width="0dp"-->
+                    <!--android:layout_height="wrap_content"-->
+                    <!--android:layout_weight="1"-->
+                    <!--android:orientation="vertical">-->
+
+                <!--</LinearLayout>-->
+
+            </LinearLayout>
+        </LinearLayout>
+    </android.support.v4.widget.SwipeRefreshLayout>
+</LinearLayout>

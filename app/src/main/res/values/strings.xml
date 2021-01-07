@@ -1,0 +1,109 @@
+<resources>
+    <string name="app_name">EMOS_AndroidApp</string>
+    <string name="app_code">2</string>
+    <string name="app_num">7</string>
+    <string name="app_version">1.1.6</string>
+    <string name="app_info">add the select and deal for the history of faults and tasks </string>
+    <string name="search_name">Device search</string>
+    <string name="scan_name">Code Scan</string>
+    <string name="scan_button">Submit</string>
+    <!-- Strings related to login -->
+    <string name="prompt_email">Email</string>
+    <string name="prompt_password">Password (optional)</string>
+    <string name="action_sign_in">Sign in or register</string>
+    <string name="change_server">Change server</string>
+    <string name="change_server_title">type the server</string>
+    <string name="action_sign_in_short">Sign in</string>
+    <string name="error_field_required">This field is required</string>
+    <string name="error_incorrect_password">password is not correct</string>
+    <string name="permission_rationale">"Contacts permissions are needed for providing email completions."</string>
+
+    <string name="default_server_address">114.115.217.241:8083</string>
+
+    <string name="preference">preference</string>
+    <string name="preference_username">username</string>
+    <string name="preference_password">password</string>
+    <string name="preference_save_password">save_password</string>
+    <string name="preference_saved_password">saved_password</string>
+    <string name="preference_server_address">server_address</string>
+    <string name="preference_worker">worker</string>
+
+    <string name="error_message_username_password_empty">Username or password can not be empty!</string>
+    <string name="check_save_password">check_save_password</string>
+    <string name="change_password">Change passwords</string>
+    <string name="no_connect_response">Can not receive response!</string>
+    <string name="select_set">select setting for faults and tasks</string>
+    <string name="select_device_time">select update time</string>
+    <string name="update_info">update info</string>
+    <string name="task_select_item">task select item</string>
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="navigation_title_name">HuanBao Yunwei App</string>
+    <string name="navigation_text_name">TCB</string>
+
+    <string name="main_tab1">Task</string>
+    <string name="main_tab2">Device</string>
+    <string name="task_list">Task List</string>
+    <string name="main_fragment_title">Task Manager</string>
+    <string name="main_fragment_content1">Device Fault</string>
+    <string name="main_fragment_content2">Device Search</string>
+    <string name="main_fragment_content3">Device Correct</string>
+    <string name="main_fragment_content4">Device CheckOut</string>
+    <string name="main_fragment_content5">Device Control</string>
+    <string name="main_fragment_content6">Device Drift</string>
+
+    <string name="menu_share_to">share to</string>
+    <string name="menu_share_text">please click to download, http://60.28.101.198/docs/eoms.apk</string>
+
+    <string name="new_fault_task">new fault task</string>
+    <string name="new_other_task">new other task</string>
+    <string name="device_detail">device detail info</string>
+    <string name="device_fault">finished fault task</string>
+    <string name="device_other">finished other task</string>
+    <string name="scan_text">scan</string>
+    <string name="update_process_result">process result</string>
+    <string name="title_activity_process_fault">process result</string>
+    <string name="title_activity_process_task">process result</string>
+    <string name="clear">clear</string>
+
+    <string-array name="worker">
+        <item>worker</item>
+        <item>manager</item>
+    </string-array>
+
+    <string-array name="new_add_list">
+        <item>new Fault task</item>
+        <item>new Other task</item>
+        <item>device details</item>
+    </string-array>
+
+    <string-array name="fault_type">
+        <item>unconnected</item>
+        <item>data problems</item>
+    </string-array>
+
+    <string-array name="task_type">
+        <item>inspect</item>
+        <item>correct</item>
+        <item>check out</item>
+        <item>quality</item>
+        <item>drift</item>
+    </string-array>
+
+    <string-array name="fault_notify">
+        <item>unnotified</item>
+        <item>notified</item>
+    </string-array>
+
+    <string-array name="report_result">
+        <item>normal</item>
+        <item>abnormal</item>
+    </string-array>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="title_activity_finish_task_list">FinishTaskListActivity</string>
+    <string name="action_settings">Settings</string>
+
+</resources>

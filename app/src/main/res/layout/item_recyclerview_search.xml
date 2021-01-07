@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/layout_search_list_item"
+    android:layout_width="match_parent"
+    android:layout_height="60dp"
+    android:paddingLeft="16dp"
+    android:paddingRight="16dp"
+    android:background="?android:attr/selectableItemBackground"
+    >
+
+    <TextView
+        android:id="@+id/search_device_code"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:textSize="@dimen/search_text_size"
+        android:text="设备序列号："/>
+    <TextView
+        android:id="@+id/text_item"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="16dp"
+        android:textColor="@color/black"
+        android:textSize="@dimen/search_number_size"
+        android:layout_toRightOf="@+id/search_device_code"/>
+
+    <ImageView
+        android:id="@+id/search_img_button"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:src="@mipmap/ic_arrow_left_top" />
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_alignParentBottom="true"
+        android:background="@color/whiteSink"/>
+
+</RelativeLayout>

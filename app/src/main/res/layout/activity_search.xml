@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <RelativeLayout
+        android:background="@color/colorPrimary"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:orientation="horizontal">
+
+        <android.support.v7.widget.AppCompatImageButton
+            android:id="@+id/image_button_back"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="16dp"
+            android:background="@color/colorPrimary"
+            android:src="@mipmap/abc_ic_ab_back_mtrl_am_alpha" />
+        <Button
+            android:id="@+id/btn_search"
+            style="?android:textAppearanceSmall"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:textStyle="bold"
+            android:text="@string/search_name" />
+        <android.support.v7.widget.SearchView
+            android:id="@+id/search_view"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_toLeftOf="@+id/btn_search"
+            android:layout_toRightOf="@id/image_button_back"
+            android:showAsAction="always" />
+    </RelativeLayout>
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/search_recyclerView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scrollbars="vertical">
+
+
+
+    </android.support.v7.widget.RecyclerView>
+
+</LinearLayout>

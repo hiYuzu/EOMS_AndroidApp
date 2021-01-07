@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/new_fault_task"
+        android:title="@string/new_fault_task"/>
+    <item
+        android:id="@+id/new_other_task"
+        android:title="@string/new_other_task"/>
+    <item
+        android:id="@+id/device_fault"
+        android:title="@string/device_fault"/>
+    <item
+        android:id="@+id/device_other"
+        android:title="@string/device_other"/>
+    <item
+        android:id="@+id/device_detail"
+        android:title="@string/device_detail"/>
+</menu>

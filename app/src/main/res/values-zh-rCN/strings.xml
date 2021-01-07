@@ -1,0 +1,104 @@
+<resources>
+    <string name="app_name">环保运维</string>
+    <string name="app_code">2</string>
+    <string name="app_num">7</string>
+    <string name="app_version">1.1.6</string>
+    <string name="app_info">追加历史故障任务查询以及处理</string>
+    <string name="search_name">搜索</string>
+    <string name="scan_name">二维码查询</string>
+    <string name="scan_button">提交</string>
+    <!-- Strings related to login -->
+    <string name="prompt_email">登录名</string>
+    <string name="prompt_password">密码</string>
+    <string name="action_sign_in">登录</string>
+    <string name="change_server">修改服务器</string>
+    <string name="change_server_title">请输入服务器地址</string>
+    <string name="action_sign_in_short">Sign in</string>
+    <string name="error_field_required">This field is required</string>
+    <string name="error_incorrect_password">密码错误</string>
+    <string name="permission_rationale">"Contacts permissions are needed for providing email completions."</string>
+
+    <string name="default_server_address">114.115.217.241:8083</string>
+
+    <string name="preference">preference</string>
+    <string name="preference_username">username</string>
+    <string name="preference_password">password</string>
+    <string name="preference_save_password">save_password</string>
+    <string name="preference_saved_password">saved_password</string>
+    <string name="preference_server_address">server_address</string>
+    <string name="preference_worker">worker</string>
+
+    <string name="error_message_username_password_empty">用户名或密码不能为空!</string>
+    <string name="check_save_password">记住密码</string>
+    <string name="change_password">修改密码</string>
+    <string name="no_connect_response">未接收到响应，请检查网络连接或修改服务器地址！</string>
+    <string name="select_set">故障任务查询设置</string>
+    <string name="select_device_time">选择更换日期时间</string>
+    <string name="update_info">更新版本信息</string>
+    <string name="task_select_item">查询条件设置</string>
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="navigation_title_name">环保运维APP</string>
+    <string name="navigation_text_name">天津七一二股份有限公司</string>
+
+    <string name="main_tab1">任务管理</string>
+    <string name="main_tab2">设备管理</string>
+    <string name="task_list">任务列表</string>
+    <string name="main_fragment_title">待完成任务</string>
+    <string name="main_fragment_content1">设备故障</string>
+    <string name="main_fragment_content2">设备巡检</string>
+    <string name="main_fragment_content3">设备校准</string>
+    <string name="main_fragment_content4">设备校验</string>
+    <string name="main_fragment_content5">设备质控</string>
+    <string name="main_fragment_content6">设备漂移</string>
+
+    <string name="menu_share_to">分享到</string>
+    <string name="menu_share_text">天津七一二通信广播股份有限公司，环保运维平台安卓APP， http://114.115.217.241:8083/docs/eoms.apk</string>
+
+    <string name="new_fault_task">新建故障任务</string>
+    <string name="new_other_task">新建其他任务</string>
+    <string name="device_detail">设备详情信息</string>
+    <string name="device_fault">已完故障任务</string>
+    <string name="device_other">已完其他任务</string>
+    <string name="scan_text">扫描</string>
+    <string name="update_process_result">处理结果</string>
+    <string name="title_activity_process_fault">处理结果</string>
+    <string name="title_activity_process_task">处理结果</string>
+    <string name="clear">清空</string>
+
+    <string-array name="worker">
+        <item>运维人员</item>
+        <item>运维负责人</item>
+    </string-array>
+
+    <string-array name="new_add_list">
+        <item>新建故障任务</item>
+        <item>新建其他任务</item>
+        <item>设备详情</item>
+    </string-array>
+
+    <string-array name="fault_type">
+        <item>断开连接</item>
+        <item>数据异常</item>
+    </string-array>
+
+    <string-array name="task_type">
+        <item>巡检任务</item>
+        <item>校验任务</item>
+        <item>校准任务</item>
+        <item>质控任务</item>
+        <item>漂移任务</item>
+    </string-array>
+
+    <string-array name="fault_notify">
+        <item>未报备</item>
+        <item>已报备</item>
+    </string-array>
+
+    <string-array name="report_result">
+        <item>正常</item>
+        <item>异常</item>
+    </string-array>
+
+</resources>

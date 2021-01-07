@@ -1,0 +1,315 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    tools:context="com.a712.emos_androidapp.fragment.TabFaultBaseFragment">
+
+    <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:paddingLeft="@dimen/handle_fault_margin">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/handle_fault_margin"
+                android:layout_marginTop="@dimen/handle_fault_top"
+                android:gravity="left"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="完成状态"
+                    android:textSize="@dimen/handle_fault_font" />
+
+                <RadioGroup
+                    android:id="@+id/radioGroup"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/activity_horizontal_margin"
+                    android:contentDescription="性别"
+                    android:orientation="horizontal">
+
+                    <RadioButton
+                        android:id="@+id/radio_finished"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="完成"></RadioButton>
+
+                    <RadioButton
+                        android:id="@+id/radio_unfinished"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:checked="true"
+                        android:text="未完成"></RadioButton> 
+                </RadioGroup>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/handle_fault_margin"
+                android:layout_marginTop="@dimen/handle_fault_top"
+                android:gravity="left"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="运维人员"
+                    android:textSize="@dimen/handle_fault_font" />
+
+                <android.support.v7.widget.AppCompatSpinner
+                    android:id="@+id/spinner_handle_fault_worker"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/handle_fault_margin"
+                    android:layout_weight="1"></android.support.v7.widget.AppCompatSpinner>
+            </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/handle_fault_margin"
+            android:layout_marginTop="@dimen/handle_fault_top"
+            android:gravity="left"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="处理时间"
+                android:textSize="@dimen/handle_fault_font" />
+
+            <TextView
+                android:id="@+id/tv_fault_handle_clear"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/handle_fault_margin"
+                android:textColor="@color/blue"
+                android:background="?android:attr/selectableItemBackgroundBorderless"
+                android:text="清空" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/handle_fault_margin"
+                android:layout_marginTop="@dimen/handle_fault_top"
+                android:gravity="left"
+                android:orientation="horizontal">
+
+                <Button
+                    android:id="@+id/btn_fault_handle_date"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="选择日期" />
+
+                <TextView
+                    android:id="@+id/tv_fault_handle_date"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/black" />
+
+                <Button
+                    android:id="@+id/btn_fault_handle_time"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="选择时间" />
+
+                <TextView
+                    android:id="@+id/tv_fault_handle_time"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/black" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/handle_fault_margin"
+                android:layout_marginTop="@dimen/handle_fault_top"
+                android:gravity="left"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="报备状态"
+                    android:textSize="@dimen/handle_fault_font" />
+
+                <android.support.v7.widget.AppCompatSpinner
+                    android:id="@+id/spinner_fault_record"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/handle_fault_margin"
+                    android:layout_weight="1"
+                    android:entries="@array/fault_notify"/>
+            </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/handle_fault_margin"
+            android:layout_marginTop="@dimen/handle_fault_top"
+            android:gravity="left"
+            android:orientation="horizontal">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="报备时间"
+                android:textSize="@dimen/handle_fault_font" />
+
+            <TextView
+                android:id="@+id/tv_fault_record_clear"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/handle_fault_margin"
+                android:textColor="@color/blue"
+                android:background="?android:attr/selectableItemBackgroundBorderless"
+                android:text="清空" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/handle_fault_margin"
+                android:layout_marginTop="@dimen/handle_fault_top"
+                android:gravity="left"
+                android:orientation="horizontal">
+
+                <Button
+                    android:id="@+id/btn_fault_record_date"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="选择日期" />
+
+                <TextView
+                    android:id="@+id/tv_fault_record_date"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/black" />
+
+                <Button
+                    android:id="@+id/btn_fault_record_time"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="选择时间" />
+
+                <TextView
+                    android:id="@+id/tv_fault_record_time"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/black" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/handle_fault_margin"
+                android:layout_marginTop="@dimen/handle_fault_top"
+                android:gravity="left"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="故障原因"
+                    android:textSize="@dimen/handle_fault_font" />
+
+                <android.support.v7.widget.AppCompatEditText
+                    android:id="@+id/edit_fault_reason"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:maxLines="5" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/handle_fault_margin"
+                android:layout_marginTop="@dimen/handle_fault_top"
+                android:gravity="left"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="故障处理"
+                    android:textSize="@dimen/handle_fault_font" />
+
+                <android.support.v7.widget.AppCompatEditText
+                    android:id="@+id/edit_fault_deal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:maxLines="5" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/handle_fault_margin"
+                android:layout_marginTop="@dimen/handle_fault_top"
+                android:gravity="left"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="故障描述"
+                    android:textSize="@dimen/handle_fault_font" />
+
+                <android.support.v7.widget.AppCompatEditText
+                    android:id="@+id/edit_fault_description"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:maxLines="5" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/handle_fault_margin"
+                android:layout_marginTop="@dimen/handle_fault_top"
+                android:gravity="left"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="故障备注"
+                    android:textSize="@dimen/handle_fault_font" />
+
+                <android.support.v7.widget.AppCompatEditText
+                    android:id="@+id/edit_fault_remark"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:maxLines="5" />
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/btn_fault_base_submit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom|end"
+        android:layout_marginBottom="@dimen/handle_fault_margin"
+        android:layout_marginRight="@dimen/handle_fault_top"
+        app:rippleColor="@color/blue"
+        android:src="@android:drawable/stat_sys_upload"
+        android:text="提交" />
+</FrameLayout>

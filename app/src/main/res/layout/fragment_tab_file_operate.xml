@@ -1,0 +1,31 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context="com.a712.emos_androidapp.fragment.TabFileOperateFragment">
+
+    <!--下拉刷新控件-->
+    <android.support.v4.widget.SwipeRefreshLayout
+        android:id="@+id/grid_swipe_refresh"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior"
+        >
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/grid_recycler"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"/>
+    </android.support.v4.widget.SwipeRefreshLayout>
+
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/btn_file_operate_submit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom|end"
+        android:layout_marginBottom="@dimen/handle_fault_margin"
+        android:layout_marginRight="@dimen/handle_fault_top"
+        app:rippleColor="@color/blue"
+        android:src="@android:drawable/stat_sys_upload"/>
+
+</FrameLayout>

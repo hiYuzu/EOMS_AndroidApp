@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/menu_select"
+            android:icon="@mipmap/menu_setting"
+            android:title="查询设置" />
+        <item
+            android:id="@+id/menu_password"
+            android:icon="@mipmap/menu_password"
+            android:title="修改密码" />
+        <item
+            android:id="@+id/menu_logout"
+            android:icon="@mipmap/menu_logout"
+            android:title="用户注销" />
+        <item
+            android:id="@+id/menu_share"
+            android:icon="@mipmap/menu_share"
+            android:title="应用分享" />
+
+        <item
+            android:id="@+id/menu_update"
+            android:icon="@mipmap/menu_update"
+            android:title="检查更新" />
+
+    </group>
+
+    <!--<item android:title="Communicate">
+        <menu>
+            <item
+                android:id="@+id/nav_share"
+                android:icon="@drawable/ic_menu_share"
+                android:title="Share" />
+            <item
+                android:id="@+id/nav_send"
+                android:icon="@drawable/ic_menu_send"
+                android:title="Send" />
+        </menu>
+    </item>-->
+
+</menu>
